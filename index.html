@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Traffic Light</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Traffic Light</h1>
+
+    <div class="traffic-container">
+
+        <!-- Light box: click any light to switch it -->
+        <div class="traffic-light">
+            <div id="redLight" class="light red"></div>
+            <div id="yellowLight" class="light yellow"></div>
+            <div id="greenLight" class="light green"></div>
+        </div>
+
+        <!-- Pole -->
+        <div class="pole"></div>
+
+    </div>
+
+    <!-- One button for each light -->
+    <div class="buttons">
+        <button id="redButton" class="red-btn">Red: OFF</button>
+        <button id="yellowButton" class="yellow-btn">Yellow: OFF</button>
+        <button id="greenButton" class="green-btn">Green: OFF</button>
+    </div>
+
+    <p id="status">All lights are OFF</p>
+    <p class="hint">Only one light can be ON at a time. Click the ON light again to turn it OFF.</p>
+
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
